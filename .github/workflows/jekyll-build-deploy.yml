@@ -37,5 +37,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: ./_site/*
+          strip_components: 1
           target: /var/www/html
           rm: true
