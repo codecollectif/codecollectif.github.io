@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job
+  # Build and Deployment job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -29,21 +29,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: jekyll-build
-
-  # Deployment job
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: jekyll-build
-          path: ./build
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -51,6 +36,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: ./build/*
+          source: ./_site/*
           target: /var/www/html
           rm: true
