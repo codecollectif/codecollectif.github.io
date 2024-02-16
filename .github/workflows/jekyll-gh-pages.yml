@@ -6,14 +6,19 @@ on:
   push:
     branches: ["main"]
 
+  workflow_call:
+    secrets:
+      HOST:
+        required: true
+      USERNAME:
+        required: true
+      KEY:
+        required: true
+      PORT:
+        required: true
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -36,7 +41,9 @@ jobs:
           source: ./
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: jekyll-build
 
   # Deployment job
   deploy:
@@ -46,9 +53,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: 'github-pages'
-          path: distfiles
-
+          name: jekyll-build
+          path: ./_site
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -56,6 +62,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          source: distfiles/*
+          source: ./_site/*
           target: /var/www/html
           rm: true
