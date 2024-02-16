@@ -43,7 +43,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: jekyll-build
-          path: ./_site
+          path: ./build
       - name: Copy files to server
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -51,6 +51,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: ./_site/*
+          source: ./build/*
           target: /var/www/html
           rm: true
