@@ -1,1 +1,0 @@
-# codecollectif.github.io
