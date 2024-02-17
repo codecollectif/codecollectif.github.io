@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* based on http://bettermotherfuckingwebsite.com/ */
+      /* and https://cssdojo.dev/ */
+      :root {
+        --color: #444;
+        --background-color: #fff;
+        --max-width: 65ch;
+        line-height: 1.5;
+        font-size: 125%;
+        color: var(--color);
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+      body {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 1rem 0 0;
+        font-size: larger;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      header {
+        background-color: var(--color);
+        color: var(--background-color);
+        padding: 1rem;
+      }
+      header h1 {
+        margin: 0;
+        text-align: center;
+      }
+      header a {
+        color: inherit;
+        text-decoration: none;
+      }
+      header img {
+        height: 6rem;
+        width: auto;
+      }
+      main {
+        margin: 1rem auto;
+        max-width: var(--max-width);
+        padding: 1rem;
+      }
+      footer {
+        border-top: solid 1px lightgrey;
+        margin: 1rem auto;
+        max-width: var(--max-width);
+        padding: 1rem;
+        font-size: smaller;
+        text-align: center;
+      }
+      footer a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/"><img src="/assets/logo.jpg" alt="Code Collectif" /></a>
+      </h1>
+    </header>
+    <main>{{ content }}</main>
+    <footer>
+      <p>
+        Nous suivre sur
+        <a href="https://www.linkedin.com/company/code-collectif/">LinkedIn</a>
+        <br />
+        Adhérer sur
+        <a
+          href="https://www.helloasso.com/associations/code-collectif/adhesions/adhesion"
+          >HelloAsso</a
+        >
+      </p>
+      <p>
+        Site hébergé sur un
+        <a
+          href="
+https://www.ikoula.com/fr?utm_source=levelup&utm_medium=banner&utm_campaign=iksvp"
+          >VPS</a
+        >
+        IKOULA
+      </p>
+      <a
+        href="https://www.ikoula.com"
+        title="Ikoula Hébergement web, serveurs dédiés et solutions sur mesure"
+        target="_blank"
+        rel="noopener"
+        ><img
+          src="https://www.ikoula.com/img/hosted_by_ikoula_150_blanc.png"
+          alt="Ikoula"
+          border="0"
+      /></a>
+    </footer>
+  </body>
+</html>
