@@ -84,28 +84,39 @@
         <br />
         Adhérer sur
         <a
-          href="https://www.helloasso.com/associations/code-collectif/adhesions/adhesion"
+          id="hrefHello"
+          href="https://www.helloasso.com/associations/code-collectif"
           >HelloAsso</a
         >
       </p>
+      <script>
+        const initTime = new Date();
+        const realyear = initTime.getFullYear();
+
+        document.getElementById(
+          "hrefHello"
+        ).href = `https://www.helloasso.com/associations/code-collectif/adhesions/adhesion-${realyear}`;
+      </script>
       <p>
         Site hébergé sur un
         <a
-          href="
-https://www.ikoula.com/fr?utm_source=levelup&utm_medium=banner&utm_campaign=iksvp"
+          href="https://www.ikoula.com/fr/vps/linux?utm_source=codecollectif&utm_medium=banner&utm_campaign=iksvp"
           >VPS</a
         >
         IKOULA
       </p>
       <a
-        href="https://www.ikoula.com"
-        title="Ikoula Hébergement web, serveurs dédiés et solutions sur mesure"
-        target="_blank"
-        rel="noopener"
+        href="https://www.ikoula.com/fr?utm_source=codecollectif&utm_medium=banner&utm_campaign=iksvp"
+        title="Hébergement web, serveurs dédiés et solutions sur mesure"
         ><img
-          src="https://www.ikoula.com/img/hosted_by_ikoula_150_blanc.png"
-          alt="Ikoula"
+          title="Hébergement web, serveurs dédiés et
+solutions sur mesure"
+          alt="Hébergé par Ikoula"
+          src="https://www.ikoula.com/sites/default/files/2025-
+01/heberge_par_ikoula_light.png"
           border="0"
+          width="204"
+          height="79"
       /></a>
     </footer>
   </body>
