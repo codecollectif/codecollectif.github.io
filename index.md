@@ -9,6 +9,8 @@ layout: default
 
 Code Collectif est une association loi 1901 créée à Reims le 8 septembre 2023.
 
+(RNA : W513010129 - SIRET : 92415889200019 - Adresse du siège : 59 rue de Strasbourg, 51100 REIMS)
+
 Son objet est de faciliter la collaboration entre des développeurs juniors et des porteurs de projets prioritairement locaux, en encourageant la création de prototypes d'applications web.
 Nous organisons des ateliers d'initiation au code, des formations en développement web et à l’utilisation d’outils web, et nous promouvons une réflexion critique sur les technologies.
 En parallèle, nous nous engageons à sensibiliser sur des sujets liés à la technologie, en proposant des événements et des rencontres.
