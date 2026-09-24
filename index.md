@@ -1,39 +1,24 @@
 ---
-title: Code Collectif
+title: Accueil
 layout: default
+description: Code Collectif est une association loi 1901 à Reims dédiée à l'apprentissage et à la pratique collective du code.
 ---
 
-<section markdown="1">
-
-## L'association
+# Code Collectif
 
 Code Collectif est une association loi 1901 créée à Reims le 8 septembre 2023.
 
-(RNA : W513010129 - SIRET : 92415889200019 - Adresse du siège : 59 rue de Strasbourg, 51100 REIMS)
+## Notre mission
 
-Son objet est de faciliter la collaboration entre des développeurs juniors et des porteurs de projets prioritairement locaux, en encourageant la création de prototypes d'applications web.
-Nous organisons des ateliers d'initiation au code, des formations en développement web et à l’utilisation d’outils web, et nous promouvons une réflexion critique sur les technologies.
-En parallèle, nous nous engageons à sensibiliser sur des sujets liés à la technologie, en proposant des événements et des rencontres.
-Notre objectif est de responsabiliser nos participants, de favoriser le partage des compétences et de promouvoir une démocratie collaborative.
+- **Accompagner les personnes qui apprennent à développer**, prioritairement à Reims et sur le web, à toutes les étapes de leur parcours, notamment par la pratique collective du code et la réalisation de projets concrets ;
+- **Démocratiser l'apprentissage du code et l'accès aux outils numériques**, notamment par l'organisation d'ateliers d'initiation, de formations, et d'événements de sensibilisation aux enjeux technologiques.
 
-En bref, nous cherchons à faire du code un "bien commun", en créant un environnement propice à l'apprentissage actif et à la compréhension des technologies, tout en contribuant à l'innovation dans le domaine du développement web et en soutenant nos membres dans leur évolution professionnelle.
+Plus généralement, l'association peut mener toute action, activité ou partenariat contribuant à ces deux missions.
 
-</section>
+## Découvrir nos activités et notre organisation
 
-<section markdown="1">
+Pour approfondir votre découverte de Code Collectif, nous vous invitons à consulter nos différentes rubriques :
 
-## Nos Outils
-
-Découvrez ci-dessous une sélection de nos outils disponibles pour vous aider
-à développer vos compétences en programmation :
-
-- [Notre serveur discord](https://discord.gg/EJTsyuFwzj) : rejoignez-nous pour prendre contact et en savoir plus sur nos activités.
-- Le [Test de compétence en programmation](/programming-levels/test) : version française du [Programming proficiency test](https://dr-knz.net/programming-levels/test) de Raphael 'kena' Poss
-- La table associée, également traduite de [l'originale](https://dr-knz.net/programming-levels.html) :
-  [<img
-    src="/assets/prog-skill-matrix-vf.png"
-    alt="Matrice d’auto-évaluation des compétences en programmation"
-    loading="lazy"
-  />](/assets/prog-skill-matrix-vf.pdf)
-
-</section>
+- **[L'association](/association/)** : notre statut juridique, nos informations officielles d'enregistrement (RNA, SIRET, siège), la composition de notre bureau et nos engagements pour la démocratie collaborative.
+- **[Nos actions](/actions/)** : nos ateliers pratiques mensuels (« RDV Bidouilles » à [Saint-Ex - Culture Numérique - Reims](https://saintex-reims.com/ateliers/)), nos formations, nos événements de sensibilisation, notre chaîne YouTube et nos outils d'évaluation technique.
+- **[Contact](/contact/)** : comment nous joindre par courriel, échanger avec notre communauté sur notre serveur Discord ou adhérer à l'association via HelloAsso.

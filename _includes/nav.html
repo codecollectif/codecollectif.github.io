@@ -1,0 +1,12 @@
+<nav aria-label="Navigation principale">
+  <ul>
+    {% for item in site.navigation %}
+      <li>
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    <li>
+      <a class="nav-cta adhesion-link" href="https://www.helloasso.com/associations/code-collectif">Adhérer</a>
+    </li>
+  </ul>
+</nav>
